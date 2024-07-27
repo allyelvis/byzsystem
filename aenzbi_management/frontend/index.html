@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aenzbi Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Aenzbi Management System</h1>
+    
+    <section id="products">
+        <h2>Products</h2>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="number" id="productPrice" placeholder="Product Price" required>
+            <input type="number" id="productStock" placeholder="Product Stock" required>
+            <button type="submit">Add Product</button>
+        </form>
+        <ul id="productList"></ul>
+    </section>
+
+    <section id="sales">
+        <h2>Sales</h2>
+        <form id="saleForm">
+            <input type="text" id="saleProductId" placeholder="Product ID" required>
+            <input type="number" id="saleQuantity" placeholder="Quantity" required>
+            <button type="submit">Add Sale</button>
+        </form>
+        <ul id="saleList"></ul>
+    </section>
+
+    <section id="users">
+        <h2>Users</h2>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Add User</button>
+        </form>
+        <ul id="userList"></ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
