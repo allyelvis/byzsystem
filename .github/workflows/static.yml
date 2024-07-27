@@ -36,11 +36,8 @@ jobs:
         with:
           node-version: '14' # or whichever version you prefer
 
-      - name: List directory structure
-        run: ls -R
-
       - name: Run custom script
-        run: node aenzbi_management/frontend/server.js
+        run: node aenzbi_management/server.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
