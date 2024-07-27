@@ -34,7 +34,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
         with:
-          node-version: '14' # or whichever version you prefer
+          node-version: '18' # Update to Node.js 18 or later
 
       - name: Run custom script
         run: node aenzbi_management/server.js
