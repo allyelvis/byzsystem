@@ -1,0 +1,22 @@
+{
+  "name": "aenzbi_manaagement",
+  "version": "1.0.0",
+  "description": "frontend to manage product,sale,and user",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allyelvis/byzsystem.git"
+  },
+  "keywords": [
+    "aenzbi"
+  ],
+  "author": "Ally Elvis Nzeyimana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allyelvis/byzsystem/issues"
+  },
+  "homepage": "https://github.com/allyelvis/byzsystem#readme"
+}
