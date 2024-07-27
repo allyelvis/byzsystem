@@ -23,3 +23,19 @@
     "internal": "^2.0.27"
   }
 }
+{
+  "type": "module",
+  "name": "aenzbi-management",
+  "version": "1.0.0",
+  "description": "A comprehensive management system for Aenzbi, including server and client components.",
+  "main": "bysystem/index.js",
+  "scripts": {
+    "start": "node bysystem/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
