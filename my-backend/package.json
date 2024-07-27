@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "my-backend",
+  "version": "1.0.0",
+  "description": "A comprehensive backend using Node.js and PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
