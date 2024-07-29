@@ -1,17 +1,17 @@
-import express from 'express';
-import db from './models';
+import express from "express";
+import db from "./models";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
 });
 
 // User routes
-app.post('/users', async (req, res) => {
+app.post("/users", async (req, res) => {
   try {
     const user = await db.User.create(req.body);
     res.status(201).json(user);
@@ -21,7 +21,7 @@ app.post('/users', async (req, res) => {
 });
 
 // Product routes
-app.post('/products', async (req, res) => {
+app.post("/products", async (req, res) => {
   try {
     const product = await db.Product.create(req.body);
     res.status(201).json(product);
@@ -30,7 +30,7 @@ app.post('/products', async (req, res) => {
   }
 });
 
-app.get('/products', async (req, res) => {
+app.get("/products", async (req, res) => {
   try {
     const products = await db.Product.findAll();
     res.json(products);
@@ -40,7 +40,7 @@ app.get('/products', async (req, res) => {
 });
 
 // Sale routes
-app.post('/sales', async (req, res) => {
+app.post("/sales", async (req, res) => {
   try {
     const sale = await db.Sale.create(req.body);
     res.status(201).json(sale);
@@ -49,7 +49,7 @@ app.post('/sales', async (req, res) => {
   }
 });
 
-app.get('/sales', async (req, res) => {
+app.get("/sales", async (req, res) => {
   try {
     const sales = await db.Sale.findAll({ include: [db.Product] });
     res.json(sales);
@@ -61,11 +61,11 @@ app.get('/sales', async (req, res) => {
 (async () => {
   try {
     await db.sequelize.authenticate();
-    console.log('Database connection has been established successfully.');
+    console.log("Database connection has been established successfully.");
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
   } catch (error) {
-    console.error('Unable to connect to the database:', error);
+    console.error("Unable to connect to the database:", error);
   }
 })();
